@@ -1,3 +1,4 @@
+// Refactor into separate funtions
 require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/widgets/LayerList", "dojo/domReady!"], 
 
 function(map, mapview,featurelayer, layerlist){
@@ -62,7 +63,7 @@ function(map, mapview,featurelayer, layerlist){
         })
         
         map1.add(fl2);
-        // console.log(map1.fl1.url)
+        
 
     });
     
