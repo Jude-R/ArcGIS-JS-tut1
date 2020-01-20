@@ -1,8 +1,9 @@
 // Refactor into separate funtions
-require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/widgets/LayerList", "dojo/domReady!"], 
+require(["./js/addLayer.js", "esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/widgets/LayerList", "dojo/domReady!"], 
 
-function(map, mapview,featurelayer, layerlist){
-    console.log("Hello world 1 ")
+function(app, map, mapview,featurelayer, layerlist){
+    console.log("Hello world 1 ");
+    console.log(app);
     map1 = new map({
         basemap: "topo"
     });
@@ -53,19 +54,7 @@ function(map, mapview,featurelayer, layerlist){
     
     
 
-    document.getElementById("subBtn").addEventListener("click", async function(){
-        var lyrUrl = await document.getElementById("inBox").value;
-
-        console.log("Text value:", lyrUrl);
-        fl2 = new featurelayer({
-            url:  lyrUrl,
-            outFields: ["*"]
-        })
-        
-        map1.add(fl2);
-        
-
-    });
+    document.getElementById("subBtn").addEventListener("click", );
     
 });
 

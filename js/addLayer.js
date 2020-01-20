@@ -11,4 +11,4 @@ async function addServiceLayer(){
     
     map1.add(fl2);
     
-})
+}) 
